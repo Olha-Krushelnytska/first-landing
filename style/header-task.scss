@@ -1,0 +1,131 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.header-task {
+    background-color: $white;
+    position: relative;
+    height: 210px;
+
+    &-bg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        z-index: 0;
+    }
+
+    &-logo {
+        position: absolute;
+        top: 15px;
+        left: 46px;
+        z-index: +1;
+    }
+
+    &-line {
+        position: relative;
+        z-index: +1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 46px;
+        padding-left: 139px;
+
+        &-list {
+            list-style: none;
+            display: flex;
+            text-align: center;
+            margin-top: 40px;
+
+            &-item {
+                margin-right: 40px;
+
+                &-link {
+                    text-decoration: none;
+                    @include basic-text;
+                }
+            }
+        }
+
+        &-btn {
+            border: none;
+            background: #FFFFFF;
+            border-radius: 100px;
+            padding: 13px 40px;
+            margin-top: 30px;
+
+            &-link {
+                text-decoration: none;
+                text-transform: uppercase;
+                @include btn-text;
+            }
+        }
+    }
+
+    &-bg-mob {
+        display: none;
+    }
+
+    &-menu {
+        display: none;
+    }
+
+    &-man {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .header-task {
+        height: 130px;
+
+        &-bg {
+            display: none;
+        }
+
+        &-bg-mob {
+            display: block;
+        }
+
+        &-logo {
+            display: none;
+        }
+
+        &-line {
+            display: none;
+        }
+
+        &-menu {
+            display: block;
+            position: absolute;
+            z-index: +1;
+            top: 20px;
+            left: 20px;
+
+            &-item {
+                width: 30px;
+                height: 2px;
+                background-color: $white;
+
+                &:first-child {
+                    margin-bottom: 5px;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 5px;
+                }
+            }
+
+        }
+
+        &-man {
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            z-index: +1;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}

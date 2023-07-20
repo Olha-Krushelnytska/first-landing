@@ -1,0 +1,98 @@
+.presentation {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center; }
+  .presentation-brand {
+    position: absolute;
+    width: 712px;
+    height: 293px;
+    top: 70px; }
+  .presentation-bear {
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    top: 100px;
+    right: 130px; }
+  .presentation-content {
+    position: absolute;
+    top: 320px;
+    right: 380px; }
+    .presentation-content-title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #31456A; }
+    .presentation-content-subtitle {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #31456A; }
+    .presentation-content-btn {
+      display: none; }
+    .presentation-content-link {
+      display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .presentation {
+    height: 350px; }
+    .presentation-brand {
+      width: 344px;
+      height: 141px;
+      top: -65px;
+      left: 30px; }
+    .presentation-bear {
+      width: 229.46px;
+      height: 287.96px;
+      top: -20px;
+      left: 240px;
+      transform: rotate(0.05turn); }
+    .presentation-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      left: -70px;
+      top: 70px;
+      z-index: +1; }
+      .presentation-content-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A; }
+      .presentation-content-subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #31456A; }
+      .presentation-content-btn {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        background: linear-gradient(215.31deg, #F9F0C3 9.73%, #EFBB03 71.72%);
+        border-radius: 100px;
+        color: #31456A;
+        text-transform: uppercase;
+        border: none;
+        padding: 14px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      .presentation-content-link {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9fcbf1; } }
+
+/*# sourceMappingURL=presentation.css.map */

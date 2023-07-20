@@ -1,0 +1,219 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.order {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+
+    &-img-mob {
+        display: none;
+    }
+
+    &-img {
+        position: relative;
+        margin-top: 30px;
+        &-circle {
+            z-index: -1;
+        }
+
+        &-rock-man {
+            width: 454.69px;
+            height: 569.05px;
+            position:absolute;
+            z-index: +1;
+            left:200px;
+            bottom: 20px;
+        }
+    }
+
+    &-title {
+        display: none;
+    }
+
+    &-content {
+        position: relative;
+        margin-left: 140px;
+
+        &-title {
+            @include title-big;
+            padding-bottom: 50px;
+        }
+
+        &-text-first {
+            display: flex;
+            align-items: center;
+
+            &-img {
+                width: 66px;
+                height: 121px;
+                margin-right: 30px;
+            }
+
+            &-cont {
+                @include text-number;
+            }
+
+            &-cont-mob {
+                display: none;
+            }
+        }
+
+        &-text-second {
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+
+            &-img {
+                width: 120px;
+                height: 131px;
+                margin-right: 9px;
+            }
+
+            &-cont {
+                @include text-number;
+            }
+
+            &-cont-mob {
+                display: none;
+            }
+        }
+
+        &-text-third {
+            display: flex;
+            align-items: center;
+
+            &-img {
+                width: 74px;
+                height: 132px;
+                margin-right: 13px;
+            }
+
+            &-cont {
+                @include text-number;
+            }
+
+            &-cont-mob {
+                display: none;
+            }
+        }
+
+        &-btn {
+            @include btn;
+            border: none;
+            padding: 14px 46.86px 12.9px 48px;
+            margin-top: 58px;
+
+            &-text {
+                text-decoration: none;
+                @include btn-text;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .order {
+        margin-top: 180px;
+        &-img {
+            display: none;
+        }
+
+        &-img-mob {
+            display: block;
+            &-circle {     
+                position: relative;
+                left:10px;
+                z-index: -1;
+            }
+
+            &-man {
+                position: absolute;
+                width: 196px;
+                height: 246.47px;
+                z-index: 0;
+                top:20px;
+                left: -20px;
+            }
+        }
+
+        &-title {
+            display: block;
+            @include title-mob;
+            position: relative;
+            top:-170px;
+        }
+
+        &-content {
+            position: relative;
+            top:-30px;
+            margin-left: 0px;     
+            &-title {
+                display: none;
+            }
+
+            &-text-first {
+                margin-top: 50px;
+                margin-bottom: 20px;
+
+                &-img {
+                    width: 36px;
+                    height: 68px;
+                }
+
+                &-cont {
+                    display: none;
+                }
+
+                &-cont-mob {
+                    display: block;
+                    @include mobile-text;
+                }
+            }
+
+            &-text-second {
+                margin-left: 20px;
+                margin-bottom: 20px;
+
+                &-img {
+                    width: 62px;
+                    height: 68px;
+                }
+
+                &-cont {
+                    display: none;
+                }
+
+                &-cont-mob {
+                    display: block;
+                    @include mobile-text;
+                }
+            }
+
+            &-text-third {
+
+                &-img {
+                    width: 41px;
+                    height: 72px;
+                }
+
+                &-cont {
+                    display: none;
+                }
+
+                &-cont-mob {
+                    display: block;
+                    @include mobile-text;
+                }
+            }
+
+            &-btn {
+                display: none;
+            }
+        }
+    }
+}

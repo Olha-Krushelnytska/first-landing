@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px; }
+  .header-logo {
+    position: absolute;
+    z-index: +1;
+    top: 40px;
+    left: 170px; }
+  .header-circle-left {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px; }
+  .header-circle-right {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: 0px; }
+  .header-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: +1;
+    margin-left: 210px; }
+    .header-list-item-link {
+      text-decoration: none;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #31456A;
+      margin-right: 30px; }
+  .header-btn {
+    position: relative;
+    z-index: +1;
+    background: linear-gradient(215.31deg, #F9F0C3 9.73%, #EFBB03 71.72%);
+    border-radius: 100px;
+    border: none;
+    padding: 14px 64.87px 13.08px 65px;
+    margin-right: 160px; }
+    .header-btn-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #31456A; }
+  .header-manager {
+    display: none; }
+  .header-menu {
+    display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .header {
+    width: 100%; }
+    .header-circle-left {
+      width: 200px;
+      height: 185px;
+      top: -20px;
+      left: -20px; }
+    .header-logo {
+      display: none; }
+    .header-circle-right {
+      display: none; }
+    .header-list {
+      display: none; }
+    .header-btn {
+      display: none; }
+    .header-manager {
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 10px;
+      left: 340px; }
+    .header-menu {
+      display: block; }
+      .header-menu-line {
+        position: absolute;
+        z-index: +2;
+        top: 15px;
+        left: 10px;
+        width: 30px;
+        height: 2px;
+        background-color: white; }
+        .header-menu-line:first-child {
+          top: 20px; }
+        .header-menu-line:last-child {
+          top: 25px; } }
+
+/*# sourceMappingURL=header.css.map */

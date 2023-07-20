@@ -1,0 +1,117 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.news {
+    margin-top: 60px;
+    margin-bottom: 100px;
+
+    &-title {
+        @include title-big;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+
+        &-text {
+            width: 453px;
+            height: 295px;
+            background-color: $yellow;
+            padding-top: 30px;
+            padding-left: 54px;
+            margin-right: 25px;
+
+            &-title {
+                @include title-small;
+                margin-left: 15px;
+            }
+
+            &-cont {
+                @include text-number;
+            }
+        }
+
+        &-img {
+            width: 401.39px;
+            height: 325px;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: center;
+
+        &-left {
+            width: 399.16;
+            height: 325px;
+            margin-right: 25px;
+        }
+
+        &-right {
+            width: 507.31px;
+            height: 325px;
+        }
+    }
+    &-mob {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .news {
+        &-title {
+            @include title-mob;
+        }
+
+        &-top {
+            display: none;
+        }
+
+        &-bottom {
+            display: none;
+        }
+
+        &-mob {
+            display: block;
+            margin-left: 15px;
+
+            &-content {
+                background-image: url("../img/bg-news.png");
+                background-size: cover;
+                width: 311px;
+                height: 325px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 34px;
+
+                &-title {
+                    @include title-small;
+                    margin-top: 29px;
+                }
+
+                &-text {
+                    @include text-number;
+                }
+            }
+
+            &-img-fest {
+                width: 345px;
+                height: 325px;
+                border-radius: 6px;
+                margin-bottom: 12px;
+            }
+
+            &-img-girl {
+                width: 345px;
+                height: 325px;
+            }
+
+        }
+    }
+
+}

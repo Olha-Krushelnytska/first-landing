@@ -1,0 +1,104 @@
+.news {
+  margin-top: 60px;
+  margin-bottom: 100px; }
+  .news-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #31456A;
+    text-align: center;
+    margin-bottom: 60px; }
+  .news-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px; }
+    .news-top-text {
+      width: 453px;
+      height: 295px;
+      background-color: #FFD93B;
+      padding-top: 30px;
+      padding-left: 54px;
+      margin-right: 25px; }
+      .news-top-text-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #31456A;
+        margin-left: 15px; }
+      .news-top-text-cont {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A; }
+    .news-top-img {
+      width: 401.39px;
+      height: 325px; }
+  .news-bottom {
+    display: flex;
+    justify-content: center; }
+    .news-bottom-left {
+      width: 399.16;
+      height: 325px;
+      margin-right: 25px; }
+    .news-bottom-right {
+      width: 507.31px;
+      height: 325px; }
+  .news-mob {
+    display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .news-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #31456A; }
+  .news-top {
+    display: none; }
+  .news-bottom {
+    display: none; }
+  .news-mob {
+    display: block;
+    margin-left: 15px; }
+    .news-mob-content {
+      background-image: url("../img/bg-news.png");
+      background-size: cover;
+      width: 311px;
+      height: 325px;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 34px; }
+      .news-mob-content-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #31456A;
+        margin-top: 29px; }
+      .news-mob-content-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A; }
+    .news-mob-img-fest {
+      width: 345px;
+      height: 325px;
+      border-radius: 6px;
+      margin-bottom: 12px; }
+    .news-mob-img-girl {
+      width: 345px;
+      height: 325px; } }
+
+/*# sourceMappingURL=news.css.map */

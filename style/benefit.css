@@ -1,0 +1,124 @@
+.benefit {
+  width: 100%;
+  position: relative;
+  margin-top: 230px; }
+  .benefit-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #31456A;
+    text-align: center;
+    margin-bottom: 100px; }
+  .benefit-list {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle; }
+    .benefit-list-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .benefit-list-box-img {
+        width: 126px;
+        height: 126px;
+        margin-bottom: 10px; }
+      .benefit-list-box-info {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A;
+        text-align: center; }
+      .benefit-list-box-info-mob {
+        display: none; }
+    .benefit-list-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 10px;
+      margin-left: 140px;
+      margin-right: 156px; }
+      .benefit-list-contact-img {
+        width: 135px;
+        height: 134px;
+        margin-bottom: 9px; }
+      .benefit-list-contact-info {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A; }
+    .benefit-list-test {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .benefit-list-test-img {
+        width: 135px;
+        height: 134px;
+        margin-bottom: 13px; }
+      .benefit-list-test-info {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A;
+        text-align: center; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .benefit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    margin-top: 20px; }
+    .benefit-title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #31456A;
+      text-align: center;
+      margin-bottom: 30px; }
+    .benefit-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .benefit-list-box {
+        text-align: center;
+        margin-bottom: 39px; }
+        .benefit-list-box-info {
+          display: none; }
+        .benefit-list-box-info-mob {
+          display: block;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #31456A; }
+      .benefit-list-contact {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #31456A;
+        text-align: center;
+        margin-bottom: 38px; }
+      .benefit-list-test {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #31456A;
+        text-align: center; } }
+
+/*# sourceMappingURL=benefit.css.map */

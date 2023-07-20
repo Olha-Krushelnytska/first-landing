@@ -1,0 +1,56 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.title-task {
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+
+    &-main {
+        display: block;
+        @include title-small;
+        text-align: center;
+    }
+
+    &-mob {
+        display: none;
+    }
+
+    &-mob-uptitle {
+        display: none;
+    }
+
+    &-big {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .title-task {
+        padding-bottom: 20px;
+
+        &-main {
+            display: none;
+        }
+
+        &-mob {
+            display: block;
+            @include mobile-text;
+        }
+
+        &-mob-uptitle {
+            display: block;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: $light-grey;
+        }
+
+        &-big {
+            display: block;
+            @include task-title;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+
+.category {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-right: 46px;
+    padding-left: 46px;
+
+
+    &-item {
+        &-list {
+            &-one:first-child {
+                margin-bottom: 100px;
+            }
+
+            &-two:first-child {
+                margin-bottom: 25px;
+            }
+
+            &-three:first-child {
+                margin-bottom: 62px;
+            }
+
+            &-title {
+                @include task-title;
+            }
+
+            &-text {
+                @include task-text;
+                color: $light-grey;
+
+                &:hover {
+                    color: $basic-color;
+                }
+            }
+        }
+    }
+
+    &-mob {
+        display: none;
+    }
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-bottom: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 2px;
+    background-color: #E5E5E5;
+    ;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .category {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+
+        &-item {
+            display: none;
+
+        }
+
+        &-mob {
+            display: block;
+
+            &-title {
+                @include switch-mob;
+            }
+
+            &-text {
+                @include label;
+
+                &:hover {
+                    color: $basic-color;
+                }
+            }
+        }
+    }
+}

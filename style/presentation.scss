@@ -1,0 +1,110 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.presentation {
+position: relative;
+z-index: 0;
+width: 100%;
+height: 600px;
+display: flex;
+justify-content: center;
+
+&-brand {
+    position: absolute;
+    width: 712px;
+    height: 293px;
+    top: 70px;
+}
+
+&-bear {
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    top: 100px;
+    right: 130px;
+}
+
+&-content {
+    position: absolute;
+    top: 320px;
+    right: 380px;
+
+    &-title {
+    @include title-small;
+    }
+
+    &-subtitle {
+    @include basic-text;
+    }
+
+    &-btn {
+    display: none;
+    }
+
+    &-link {
+    display: none;
+    }
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .presentation {
+    height: 350px;
+
+    &-brand {
+    width: 344px;
+    height: 141px;
+    top: -65px;
+    left: 30px;
+    }
+
+    &-bear {
+    width: 229.46px;
+    height: 287.96px;
+    top: -20px;
+    left: 240px;
+    transform: rotate(0.05turn);
+    }
+
+    &-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -70px;
+
+    top: 70px;
+    z-index: +1;
+
+    &-title {
+        @include btn-text;
+    }
+
+    &-subtitle {
+        @include mobile-text;
+    }
+
+    &-btn {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        @include btn;
+        color: $basic-color;
+        text-transform: uppercase;
+        border: none;
+        padding: 14px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-link {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9fcbf1;
+    }
+    }
+}
+}

@@ -1,0 +1,258 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.response {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+    &-img {
+        position: relative;
+        margin-right: 89px;
+
+        &-main {
+            width: 618px;
+            height: 474px;
+        }
+
+        &-logo {
+            width: 150px;
+            height: 80px;
+            position: absolute;
+            top: 120px;
+            left: 250px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+
+
+
+        &-title {
+            @include title-big;
+            padding-top: 50px;
+            margin-bottom: 60px;
+
+        }
+
+        &-subtitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-img {
+                width: 59.98px;
+                height: 60px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            &-info {
+                position: relative;
+
+                &-name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $basic-color;
+                    margin-bottom: 10px;
+                }
+
+                &-result-mob {
+                    display: none;
+                }
+
+                &-result {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include text-number;
+
+                    &:first-child {
+                        color: $light-grey;
+                        margin-right: 3px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-bottom: 4px;
+                        margin-right: 3px;
+
+                    }
+
+                    &:nth-child(3) {
+                        color: $basic-color;
+                        margin-right: 3px;
+                    }
+
+                    &:nth-child(4) {
+                        margin-top: 5px;
+                        margin-right: 3px;
+                        margin-left: 10px;
+                    }
+
+                    &:nth-child(5) {
+                        margin-right: 10px;
+                    }
+
+                    &:nth-child(8) {
+                        color: $light-grey;
+                        margin-right: 3px;
+                        margin-left: 50px;
+                    }
+
+                    &:last-child {
+                        color: $basic-color;
+                    }
+                }
+
+                &-star {
+                    position: absolute;
+                    z-index: -1;
+                    left: 125px;
+
+                }
+
+            }
+        }
+
+        &-line {
+            width: 430px;
+            height: 1px;
+            background-color: #D6E4F0;
+        }
+
+        &-line-mob {
+            display: none;
+        }
+
+        &-info {
+            @include text-number;
+            margin-top: 30px;
+        }
+
+        &-info-mob {
+            display: none;
+        }
+
+        &-circle {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .response {
+        padding-left: 15px;
+        margin-top: 30px;
+
+        &-img {
+            display: none;
+        }
+
+        &-content {
+            &-title {
+                @include title-mob;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            &-subtitle {
+                justify-content: flex-start;
+
+                &-info {
+                    &-result {
+                        display: none;
+                    }
+
+                    &-result-mob {
+                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include mobile-text;
+
+                        &:first-child {
+                            color: $light-grey;
+                            margin-right: 3px;
+                        }
+
+                        &:nth-child(2) {
+                            margin-bottom: 4px;
+                            margin-right: 3px;
+
+                        }
+
+                        &:nth-child(3) {
+                            color: $basic-color;
+                            margin-right: 3px;
+                        }
+
+                        &:nth-child(4) {
+                            margin-top: 5px;
+                            margin-right: 3px;
+                            margin-left: 10px;
+                        }
+
+                        &:nth-child(5) {
+                            margin-right: 10px;
+                        }
+
+                        &:nth-child(8) {
+                            color: $light-grey;
+                            margin-right: 3px;
+                            margin-left: 50px;
+                        }
+
+                        &:last-child {
+                            color: $basic-color;
+                        }
+
+                    }
+                }
+            }
+
+            &-info {
+                display: none;
+            }
+
+            &-info-mob {
+                display: block;
+                @include mobile-text;
+            }
+
+            &-line {
+                display: none;
+            }
+
+            &-line-mob {
+                display: block;
+                width: 345px;
+                height: 1px;
+                background-color: #D6E4F0;
+            }
+
+            &-circle {
+                display: block;
+                display: flex;
+                justify-content: center;
+                margin-top: 16px;
+
+                &-item {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #D2D9E6;
+                    margin-right: 6.86px;
+
+                    &:last-child {
+                        background-color: #FFD93B;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,95 @@
+.header-task {
+  background-color: #FFFFFF;
+  position: relative;
+  height: 210px; }
+  .header-task-bg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    z-index: 0; }
+  .header-task-logo {
+    position: absolute;
+    top: 15px;
+    left: 46px;
+    z-index: +1; }
+  .header-task-line {
+    position: relative;
+    z-index: +1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 46px;
+    padding-left: 139px; }
+    .header-task-line-list {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      margin-top: 40px; }
+      .header-task-line-list-item {
+        margin-right: 40px; }
+        .header-task-line-list-item-link {
+          text-decoration: none;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #31456A; }
+    .header-task-line-btn {
+      border: none;
+      background: #FFFFFF;
+      border-radius: 100px;
+      padding: 13px 40px;
+      margin-top: 30px; }
+      .header-task-line-btn-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #31456A; }
+  .header-task-bg-mob {
+    display: none; }
+  .header-task-menu {
+    display: none; }
+  .header-task-man {
+    display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .header-task {
+    height: 130px; }
+    .header-task-bg {
+      display: none; }
+    .header-task-bg-mob {
+      display: block; }
+    .header-task-logo {
+      display: none; }
+    .header-task-line {
+      display: none; }
+    .header-task-menu {
+      display: block;
+      position: absolute;
+      z-index: +1;
+      top: 20px;
+      left: 20px; }
+      .header-task-menu-item {
+        width: 30px;
+        height: 2px;
+        background-color: #FFFFFF; }
+        .header-task-menu-item:first-child {
+          margin-bottom: 5px; }
+        .header-task-menu-item:nth-child(2) {
+          margin-bottom: 5px; }
+    .header-task-man {
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      z-index: +1;
+      top: 20px;
+      right: 20px; } }
+
+/*# sourceMappingURL=header-task.css.map */
